@@ -1,5 +1,4 @@
-<%{ './partials/base.html' }%>
-<%{ title %><%= query %><%}%>
+<%{ './partials/base.html' { title: query, fingerprint: fingerprint } }%>
 <%{ head %>
 	<script>
 		window.QUERY=<%- JSON.stringify(encodeURIComponent(query)) %>;
